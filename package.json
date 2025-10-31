@@ -1,0 +1,27 @@
+{
+  "name": "mfe-vite-poc",
+  "version": "1.0.0",
+  "description": "Module Federation POC with Vite and pnpm workspaces",
+  "private": true,
+  "scripts": {
+    "dev:shell": "pnpm --filter shell dev",
+    "dev:dashboard": "pnpm --filter dashboard dev",
+    "dev:products": "pnpm --filter products dev",
+    "dev:settings": "pnpm --filter settings dev",
+    "dev:all": "concurrently \"pnpm dev:shell\" \"pnpm dev:dashboard\" \"pnpm dev:products\" \"pnpm dev:settings\"",
+    "build:all": "pnpm --filter shared build && pnpm --filter dashboard build && pnpm --filter products build && pnpm --filter settings build && pnpm --filter shell build",
+    "preview:shell": "pnpm --filter shell preview"
+  },
+  "keywords": [
+    "module-federation",
+    "vite",
+    "react",
+    "monorepo"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@module-federation/vite": "^1.9.0",
+    "concurrently": "^8.2.2"
+  }
+}
