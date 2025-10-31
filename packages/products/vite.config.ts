@@ -27,7 +27,7 @@ export default defineConfig({
     port: 5002,
     strictPort: true,
     cors: true,
-    origin: "http://localhost:5002",
+    origin: process.env.VITE_ORIGIN || "http://localhost:5002",
   },
   preview: {
     port: 5002,

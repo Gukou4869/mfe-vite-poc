@@ -1,0 +1,13 @@
+{
+  "buildCommand": "cd ../.. && pnpm install && pnpm --filter shell build",
+  "outputDirectory": "dist",
+  "installCommand": "echo 'Skipping default install, using buildCommand instead'",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+
