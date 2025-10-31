@@ -1,6 +1,6 @@
 {
-  "buildCommand": "pnpm install && pnpm --filter shared build && pnpm --filter products build",
-  "outputDirectory": "packages/products/dist",
+  "buildCommand": "cd ../.. && pnpm install && pnpm --filter shared build && pnpm --filter products build",
+  "outputDirectory": "dist",
   "installCommand": "echo 'Skipping default install, using buildCommand instead'",
   "framework": null,
   "headers": [
