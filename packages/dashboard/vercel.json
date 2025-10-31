@@ -1,6 +1,6 @@
 {
-  "buildCommand": "cd ../.. && pnpm install && pnpm --filter shared build && pnpm --filter dashboard build",
-  "outputDirectory": "dist",
+  "buildCommand": "pnpm install && pnpm --filter shared build && pnpm --filter dashboard build",
+  "outputDirectory": "packages/dashboard/dist",
   "installCommand": "echo 'Skipping default install, using buildCommand instead'",
   "framework": null,
   "headers": [
