@@ -1,3 +1,8 @@
+/**
+ * Shared Components and Utilities
+ * Used across all Micro Frontend applications
+ */
+
 // Theme
 export { theme } from './theme';
 

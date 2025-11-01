@@ -3,6 +3,7 @@
   "outputDirectory": "dist",
   "installCommand": "echo 'Skipping default install, using buildCommand instead'",
   "framework": null,
+  "ignoreCommand": "bash -c 'cd ../.. && git diff --quiet HEAD^ HEAD -- packages/settings packages/shared'",
   "headers": [
     {
       "source": "/(.*)",
