@@ -28,6 +28,22 @@
       "handle": "filesystem"
     },
     {
+      "src": "/remoteEntry.js",
+      "dest": "/remoteEntry.js"
+    },
+    {
+      "src": "/mf-manifest.json",
+      "dest": "/mf-manifest.json"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/(.*\\.(js|css|json|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
+      "dest": "/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
