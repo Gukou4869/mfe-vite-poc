@@ -9,6 +9,7 @@ export default defineConfig({
       name: 'settings',
       filename: 'remoteEntry.js',
       manifest: true,
+      publicPath: 'auto',
       exposes: {
         './Router': './src/router/index.tsx',
       },
@@ -40,4 +41,3 @@ export default defineConfig({
     modulePreload: false,
   },
 });
-

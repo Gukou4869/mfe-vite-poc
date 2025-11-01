@@ -9,6 +9,7 @@ export default defineConfig({
       name: "dashboard",
       filename: "remoteEntry.js",
       manifest: true,
+      publicPath: "auto",
       exposes: {
         "./Router": "./src/router/index.tsx",
       },
